@@ -5,14 +5,17 @@
 #ifndef UNTITLED1_MEMORY_H
 #define UNTITLED1_MEMORY_H
 #include <iostream>
+
 /**
   *@file Memory.h
   * @version 1.0
-  * @date 15/3/18
-  * @author Oscar Isaac Porras Perez
   * @title Memory
-  * @brief Este archivo maneja todo lo que tiene que ver con la paginacion
+  * @brief Manages all about the paging
   */
+
+/**
+ * @brief Is a representation of each page that will be used for the paging
+ */
 struct Page{
     int last_time_used = 0;
     int pos_init = -1;
@@ -23,7 +26,7 @@ struct Page{
 };
 
 /**
- * @brief Memory class es la clase que controla todo lo referente a el manejo de la paginacion
+ * @brief Manages the paging process
  */
 class Memory{
 public:
@@ -40,18 +43,21 @@ public:
 
 
     /**
-     * @brief este metodo busca la posicion del numero que se busca y retorna la pagina completa en la que se encuentra
-     * @param posicion_numero la posicion del numero que se busca
+     * @brief Searches for the position of the entered number and returns the page it is in
+     * @param Number_position the position of the number
+     * @return Page the number is in
      */
     Page* getPage(int pos);
+
     /**
-     * @brief este metodo retorna el tamano del archivo que se esta leyendo, en este caso es archivo.bin
-     * @return tamano en bytes del archivo
+     * @brief Gets the size of the file that is being read archivo.bin
+     * @return Size of the file in bytes
      */
     int *getSize();
+
     /**
-     * @brief este metodo inserta la pagina entera(que se busca en el metodo cargarpagina) en los arrays de la memoria.
-     * @param paginainsertar
+     * @brief Loads the whole page to the arrays in memory
+     * @param Page_to_insert
      */
     Page* insert(struct Page *insertPage);
 

@@ -11,8 +11,22 @@
 #include <string>
 using std::string;
 
+
+/**
+  *@file PagedArray.h
+  * @version 1.0
+  * @title PagedArray
+  * @brief Manages the memory by paging
+  */
+
+/**
+ * @brief Is a representation of each page that will be used for the paging
+ */
 class PagedArray {
 public:
+    /**
+     * @brief Instantiation of the Memory class
+     */
     Memory virtualMemory;
     int MAX_INDEX;
 

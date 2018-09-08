@@ -1,0 +1,143 @@
+\hypertarget{classMemory}{}\section{Memory Class Reference}
+\label{classMemory}\index{Memory@{Memory}}
+
+
+Manages the paging process.  
+
+
+
+
+{\ttfamily \#include $<$Memory.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMemory_a585d7bb6fc6f2237bcebf94a86b7dd99}{Memory}} ()
+\item 
+\mbox{\hyperlink{structPage}{Page}} $\ast$ \mbox{\hyperlink{classMemory_a08387437b7d616155328f887808f65b7}{get\+Page}} (int pos)
+\begin{DoxyCompactList}\small\item\em Searches for the position of the entered number and returns the page it is in. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{classMemory_a95daaddc99eb1a089ea3b9f2362b249c}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Gets the size of the file that is being read archivo.\+bin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPage}{Page}} $\ast$ \mbox{\hyperlink{classMemory_a93f9a283abd85a44a0c7a36c3b3c6167}{insert}} (struct \mbox{\hyperlink{structPage}{Page}} $\ast$insert\+Page)
+\begin{DoxyCompactList}\small\item\em Loads the whole page to the arrays in memory. \end{DoxyCompactList}\item 
+int \& \mbox{\hyperlink{classMemory_abeefba4f18f5396c0635003bc028b013}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPage}{Page}} \mbox{\hyperlink{classMemory_a9cc9097c17efefe4dd48f2f1c34febd0}{Pages}} \mbox{[}4\mbox{]}
+\item 
+struct \mbox{\hyperlink{structPage}{Page}} \mbox{\hyperlink{classMemory_a0ca580503ffbb69a827aabba7d07de15}{First}}
+\item 
+struct \mbox{\hyperlink{structPage}{Page}} \mbox{\hyperlink{classMemory_a9ede2ac970e05bb7380e70b2948e3594}{Second}}
+\item 
+struct \mbox{\hyperlink{structPage}{Page}} \mbox{\hyperlink{classMemory_a5fa96206a626f01d0772aeeda0d3a83a}{Third}}
+\item 
+struct \mbox{\hyperlink{structPage}{Page}} \mbox{\hyperlink{classMemory_acc3cf7dc633add0087fb73343ecc974b}{Fourth}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages the paging process. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMemory_a585d7bb6fc6f2237bcebf94a86b7dd99}\label{classMemory_a585d7bb6fc6f2237bcebf94a86b7dd99}} 
+\index{Memory@{Memory}!Memory@{Memory}}
+\index{Memory@{Memory}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{Memory()}{Memory()}}
+{\footnotesize\ttfamily Memory\+::\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMemory_a08387437b7d616155328f887808f65b7}\label{classMemory_a08387437b7d616155328f887808f65b7}} 
+\index{Memory@{Memory}!get\+Page@{get\+Page}}
+\index{get\+Page@{get\+Page}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Page()}{getPage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPage}{Page}} $\ast$ Memory\+::get\+Page (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Searches for the position of the entered number and returns the page it is in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Number\+\_\+position} & the position of the number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structPage}{Page}} the number is in 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMemory_a95daaddc99eb1a089ea3b9f2362b249c}\label{classMemory_a95daaddc99eb1a089ea3b9f2362b249c}} 
+\index{Memory@{Memory}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily int $\ast$ Memory\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the size of the file that is being read archivo.\+bin. 
+
+\begin{DoxyReturn}{Returns}
+Size of the file in bytes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMemory_a93f9a283abd85a44a0c7a36c3b3c6167}\label{classMemory_a93f9a283abd85a44a0c7a36c3b3c6167}} 
+\index{Memory@{Memory}!insert@{insert}}
+\index{insert@{insert}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPage}{Page}} $\ast$ Memory\+::insert (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structPage}{Page}} $\ast$}]{insert\+Page }\end{DoxyParamCaption})}
+
+
+
+Loads the whole page to the arrays in memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Page\+\_\+to\+\_\+insert} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMemory_abeefba4f18f5396c0635003bc028b013}\label{classMemory_abeefba4f18f5396c0635003bc028b013}} 
+\index{Memory@{Memory}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily int\& Memory\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMemory_a0ca580503ffbb69a827aabba7d07de15}\label{classMemory_a0ca580503ffbb69a827aabba7d07de15}} 
+\index{Memory@{Memory}!First@{First}}
+\index{First@{First}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{First}{First}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPage}{Page}} Memory\+::\+First}
+
+\mbox{\Hypertarget{classMemory_acc3cf7dc633add0087fb73343ecc974b}\label{classMemory_acc3cf7dc633add0087fb73343ecc974b}} 
+\index{Memory@{Memory}!Fourth@{Fourth}}
+\index{Fourth@{Fourth}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{Fourth}{Fourth}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPage}{Page}} Memory\+::\+Fourth}
+
+\mbox{\Hypertarget{classMemory_a9cc9097c17efefe4dd48f2f1c34febd0}\label{classMemory_a9cc9097c17efefe4dd48f2f1c34febd0}} 
+\index{Memory@{Memory}!Pages@{Pages}}
+\index{Pages@{Pages}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{Pages}{Pages}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPage}{Page}} Memory\+::\+Pages\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{classMemory_a9ede2ac970e05bb7380e70b2948e3594}\label{classMemory_a9ede2ac970e05bb7380e70b2948e3594}} 
+\index{Memory@{Memory}!Second@{Second}}
+\index{Second@{Second}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{Second}{Second}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPage}{Page}} Memory\+::\+Second}
+
+\mbox{\Hypertarget{classMemory_a5fa96206a626f01d0772aeeda0d3a83a}\label{classMemory_a5fa96206a626f01d0772aeeda0d3a83a}} 
+\index{Memory@{Memory}!Third@{Third}}
+\index{Third@{Third}!Memory@{Memory}}
+\subsubsection{\texorpdfstring{Third}{Third}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPage}{Page}} Memory\+::\+Third}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Memory/\mbox{\hyperlink{Memory_8h}{Memory.\+h}}\item 
+Memory/\mbox{\hyperlink{Memory_8cpp}{Memory.\+cpp}}\end{DoxyCompactItemize}

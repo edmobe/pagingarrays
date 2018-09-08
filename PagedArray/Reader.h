@@ -9,30 +9,28 @@
 /**
   *@file Reader.h
   * @version 1.0
-  * @date 9/6/18
-  * @author Gabriel Abarca Aguilar
   * @title Reader
-  * @brief this class gets the info of the file that will be sorted
+  * @brief This class gets the info of the file that will be sorted
  **/
 class Reader {
 private:
     const char* Path;
 public:
     /**
-     * @brief Inicializa el objeto Reader
+     * @brief Initializes el objeto Reader
      */
     Reader();
 
     /**
-     *@brief Escribe los numeros aleatorios en el archivo.bin
+     *@brief Writes the random integers in the archivo.bin file
      */
     void writeFile();
     /**
-     * @brief lee el archivo.bin. NO SE USA
+     * @brief Reads archivo.bin (not used)
      */
     void readFile();
     /**
-     * @brief da el tamano real del archivo, no de lo que contiene en numeros binarios. NO SE USA
+     * @brief gives the size of the file (not used)
      */
     long getSize();
 };

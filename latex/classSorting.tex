@@ -1,0 +1,58 @@
+\hypertarget{classSorting}{}\section{Sorting Class Reference}
+\label{classSorting}\index{Sorting@{Sorting}}
+
+
+{\ttfamily \#include $<$Sorting.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classSorting_ae95d664f39b100ad4eb5eec8955382f0}{quick\+Sort}} (\mbox{\hyperlink{classPagedArray}{Paged\+Array}} $\ast$arr, int left, int right)
+\item 
+static int \mbox{\hyperlink{classSorting_a425db91d5466d143705a14a6cbb04c20}{partition}} (\mbox{\hyperlink{classPagedArray}{Paged\+Array}} $\ast$arr, int left, int right)
+\item 
+static void \mbox{\hyperlink{classSorting_ab141cec11908bd6c70f5da777187a9f1}{insertion\+Sort}} (\mbox{\hyperlink{classPagedArray}{Paged\+Array}} $\ast$arr, int length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSorting_ab141cec11908bd6c70f5da777187a9f1}\label{classSorting_ab141cec11908bd6c70f5da777187a9f1}} 
+\index{Sorting@{Sorting}!insertion\+Sort@{insertion\+Sort}}
+\index{insertion\+Sort@{insertion\+Sort}!Sorting@{Sorting}}
+\subsubsection{\texorpdfstring{insertion\+Sort()}{insertionSort()}}
+{\footnotesize\ttfamily void Sorting\+::insertion\+Sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPagedArray}{Paged\+Array}} $\ast$}]{arr,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Insertion sort algorithm 
+\begin{DoxyParams}{Parameters}
+{\em arr} & The \mbox{\hyperlink{classPagedArray}{Paged\+Array}} pointer to be sorted \\
+\hline
+{\em length} & The number of elements in the array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSorting_a425db91d5466d143705a14a6cbb04c20}\label{classSorting_a425db91d5466d143705a14a6cbb04c20}} 
+\index{Sorting@{Sorting}!partition@{partition}}
+\index{partition@{partition}!Sorting@{Sorting}}
+\subsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily int Sorting\+::partition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPagedArray}{Paged\+Array}} $\ast$}]{arr,  }\item[{int}]{left,  }\item[{int}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classSorting_ae95d664f39b100ad4eb5eec8955382f0}\label{classSorting_ae95d664f39b100ad4eb5eec8955382f0}} 
+\index{Sorting@{Sorting}!quick\+Sort@{quick\+Sort}}
+\index{quick\+Sort@{quick\+Sort}!Sorting@{Sorting}}
+\subsubsection{\texorpdfstring{quick\+Sort()}{quickSort()}}
+{\footnotesize\ttfamily void Sorting\+::quick\+Sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPagedArray}{Paged\+Array}} $\ast$}]{arr,  }\item[{int}]{left,  }\item[{int}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Quick\+Sort algorithm 
+\begin{DoxyParams}{Parameters}
+{\em arr} & The \mbox{\hyperlink{classPagedArray}{Paged\+Array}} pointer \\
+\hline
+{\em left} & Usually 0, the leftmost index \\
+\hline
+{\em right} & The index number of the rightmost element \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sorting/\mbox{\hyperlink{Sorting_8h}{Sorting.\+h}}\item 
+Sorting/\mbox{\hyperlink{Sorting_8cpp}{Sorting.\+cpp}}\end{DoxyCompactItemize}

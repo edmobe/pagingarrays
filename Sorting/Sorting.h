@@ -11,10 +11,22 @@
 class Sorting {
 public:
 
-
+    /**
+     * QuickSort algorithm
+     * @param arr The PagedArray pointer
+     * @param left Usually 0, the leftmost index
+     * @param right The index number of the rightmost element
+     */
     static void quickSort(PagedArray *arr, int left, int right);
+
+
     static int partition(PagedArray *arr, int left, int right);
 
+    /**
+     * Insertion sort algorithm
+     * @param arr The PagedArray pointer to be sorted
+     * @param length The number of elements in the array
+     */
     static void insertionSort(PagedArray *arr, int length);
 };
 

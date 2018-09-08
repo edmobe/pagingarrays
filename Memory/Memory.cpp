@@ -7,16 +7,6 @@
 #include <string>
 using std::string;
 
-/**
-  *@file Memory.h
-  * @version 1.0
-  * @date
-  * @author Gabriel Abarca
-  * @title Memory
-  * @brief this manages de pages and the Memory.
-  */
-
-
 Memory::Memory() {
 
 
@@ -31,7 +21,7 @@ Memory::Memory() {
 }
 
 int *
-Memory::getSize() {                                                                                                  //Este metodo no se utiliza
+Memory::getSize() {
     FILE *file;
     int number;
     file = fopen("archivo.bin","rb");
@@ -179,54 +169,46 @@ Page* Memory::getPage(int pos) {
     }
 
 
-    if (status == 0) {//Not Charged                                                                                         //Si la pagina no esta normal
+    if (status == 0) {
 
 
         FILE *file;
-        file = fopen("archivo.bin", "rb");                                                                               //Abre el archivo.bin
+        file = fopen("archivo.bin", "rb");
 
         if (page_num == 1) {
-            //Si el elemento se encuentra en la pagina 1 entonces  no lo multiplica por la cantidad de bytes que tiene cada pagina
             fseek(file, 0, SEEK_SET);
         }
 
-        if (page_num != 1) {                                                                                       //Si el elemento no es la primera multiplica la pagina por la cantidad de bytes que tiene cada pagina
-            //...y de esta manera posiciona el lector del archivo donde va a empezar leer la pagina
+        if (page_num != 1) {
             fseek(file, (int(page_num)-1) * 400, SEEK_SET);
         }
 
         int index = 0;
 
-        Page tempPage;                                                                                                //Crea la pagina
+        Page tempPage;
 
         *tempPage.page_num = int(page_num);
-        // Le asigna el numero de la pagina
         if(page_num == 1){
             tempPage.pos_init = 0;
         }
         if(page_num != 1){
             tempPage.pos_init = int(page_num) * 400;
         }
-        //Le asigna la index inicial de la pagina
 
         tempPage.pos_final = (int(page_num)+1) * 400;
-
-
-        //Le asigna la index final de la pagina
 
         int number;
         int counter = 0;
 
-        while (fread(&number, sizeof(int), 1, file) && counter != 101) {                                                  //Aca lee el archivo y le mete los numeros al array que tiene la pagina
+        while (fread(&number, sizeof(int), 1, file) && counter != 101) {
 
-            tempPage.elements[index] = number;                                                                       //Aca mete los numeros al array
-            index = index + 1;                                                                                    //Aumenta la index
+            tempPage.elements[index] = number;
+            index = index + 1;
             counter = counter + 1;
         }
 
 
-        insert(&tempPage);                                                                                       //Inserta la pagina creada en los memoria
-
+        insert(&tempPage);
     }
 
 }

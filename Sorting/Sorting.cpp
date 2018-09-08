@@ -4,12 +4,7 @@
 
 #include "Sorting.h"
 
-/**
- * QuickSort algorithm
- * @param arr The PagedArray pointer
- * @param left Usually 0, the leftmost index
- * @param right The index number of the rightmost element
- */
+
 void Sorting::quickSort(PagedArray *arr, int left, int right) {
     int index;
     if (left>=right){
@@ -42,12 +37,6 @@ int Sorting::partition(PagedArray *arr, int left, int right) {
     return pindex;
 }
 
-
-/**
- * Insertion sort algorithm
- * @param arr The PagedArray pointer to be sorted
- * @param length The number of elements in the array
- */
 void Sorting::insertionSort(PagedArray *arr, int length) {
     int i, j, tmp;
     for (i = 1; i < length; i++) {

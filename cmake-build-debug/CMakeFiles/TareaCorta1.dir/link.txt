@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/TareaCorta1.dir/main.cpp.o CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.o CMakeFiles/TareaCorta1.dir/Sorting/Sorting.cpp.o  -o TareaCorta1 

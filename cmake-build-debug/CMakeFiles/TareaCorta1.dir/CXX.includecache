@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maria/CLionProjects/Tarea Corta 1/Memory/Memory.h
+iostream
+-
+
+/home/maria/CLionProjects/Tarea Corta 1/PagedArray/PagedArray.h
+../Memory/Memory.h
+/home/maria/CLionProjects/Tarea Corta 1/Memory/Memory.h
+iostream
+-
+string
+-
+
+/home/maria/CLionProjects/Tarea Corta 1/PagedArray/Reader.h
+
+/home/maria/CLionProjects/Tarea Corta 1/Sorting/Sorting.cpp
+Sorting.h
+/home/maria/CLionProjects/Tarea Corta 1/Sorting/Sorting.h
+
+/home/maria/CLionProjects/Tarea Corta 1/Sorting/Sorting.h
+../PagedArray/PagedArray.h
+/home/maria/CLionProjects/Tarea Corta 1/PagedArray/PagedArray.h
+
+/home/maria/CLionProjects/Tarea Corta 1/main.cpp
+iostream
+-
+iostream
+-
+PagedArray/Reader.h
+/home/maria/CLionProjects/Tarea Corta 1/PagedArray/Reader.h
+Memory/Memory.h
+/home/maria/CLionProjects/Tarea Corta 1/Memory/Memory.h
+PagedArray/PagedArray.h
+/home/maria/CLionProjects/Tarea Corta 1/PagedArray/PagedArray.h
+Sorting/Sorting.h
+/home/maria/CLionProjects/Tarea Corta 1/Sorting/Sorting.h
+
